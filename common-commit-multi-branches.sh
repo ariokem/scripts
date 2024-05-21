@@ -38,6 +38,7 @@ if [ "$branch_develop_check" = "true" ]; then
     git commit -m "$1"
     git push
     git checkout master
+    git pull
     git merge develop
     git push
 
